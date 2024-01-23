@@ -1,6 +1,6 @@
 # Java Spring Boot Tutorial
 
-[ ] Simple CRUD API
+## 1. Simple CRUD API
 ## 2. Error handling
 ## 3. Authentication and Authorization
 ## 4. Containerize(Docker)
