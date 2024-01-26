@@ -59,4 +59,11 @@ public class User {
     private enum Gender {
         MALE, FEMALE, NONE;
     }
+
+//    Constructor based DI
+//    private User user;
+//
+//    public User(User user) {
+//        this.user = user;
+//    }
 }
