@@ -39,8 +39,12 @@ public class UserService {
 
     public Boolean loginUser(UserLogin userLogin) {
         User target = userRepository.findByEmail(userLogin.getEmail());
+        Boolean isValid = BCrypt.verifyer().verify(userLogin.getPassword().toCharArray(), target.getPassword()).verified;
+        UserToken userToken = new UserToken(target);
 
-        return BCrypt.verifyer().verify(userLogin.getPassword().toCharArray(), target.getPassword()).verified;
+        System.out.println("Token generated for this user is " + userToken.getUserToken());
+
+        return isValid;
     }
 
     public User updateUser(User userAfter) {

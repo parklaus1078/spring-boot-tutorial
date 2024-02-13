@@ -60,10 +60,13 @@ public class User {
         MALE, FEMALE, NONE;
     }
 
-//    Constructor based DI
-//    private User user;
-//
-//    public User(User user) {
-//        this.user = user;
+//    public User(String firstName, String lastName, String email, String password, String contact, String address, String birth) {
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//        this.email = email;
+//        this.password = password;
+//        this.contact = contact;
+//        this.address = address;
+//        this.birth = birth;
 //    }
 }

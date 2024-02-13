@@ -50,6 +50,11 @@ public class UserController {
         return userService.loginUser(userLogin);
     }
 
+    @RequestMapping(path = "checkToken", method = RequestMethod.POST)
+    public @ResponseBody boolean checkToken(@RequestBody String userToken) {
+        return false;
+    }
+
     @RequestMapping(method = RequestMethod.PUT)
     public @ResponseBody User patchUser(@RequestBody User userAfter) {
         return userService.updateUser(userAfter);
